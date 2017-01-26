@@ -1,0 +1,6 @@
+.DS_Store
+data/_images
+data/images
+*.coffemodel
+*.tar.gz
+data/101_ObjectCategories
