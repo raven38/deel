@@ -1,9 +1,8 @@
 import sys
-import commands
 import subprocess
 
 def cmd(cmd):
-	return commands.getoutput(cmd)
+	return subprocess.getoutput(cmd)
 #	p = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 #	p.wait()
 #	stdout, stderr = p.communicate()

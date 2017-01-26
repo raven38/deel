@@ -1,0 +1,1 @@
+digraph graphname{rankdir=TB;4650134664 [shape="oval",label="float32"];4650132424 [shape="oval",label="(32), int32"];4650132816 [shape="box",label="SoftmaxCrossEntropy"];4650134888 [shape="oval",label="(32, 1000), float32"];4650132424 -> 4650132816;4650134888 -> 4650132816;4650132816 -> 4650134664;}
