@@ -3,6 +3,8 @@ Deel; A High level deep neural network description language.
 
 You can create your own deep neural network application in a second.
 
+This is Deel supported Python 3.x.
+
 ![logo](deel.png)
 
 
@@ -13,7 +15,7 @@ Describe deep neural network, training and using in simple syntax.
 
 Chainer 1.7.1 or higher
 
-Python 2.7.8 or highter
+Python 3.5.2 or heigher
 
 (Optional) OpenCv 2.4.12 or higher
 
@@ -35,6 +37,10 @@ $ python test.py
 
 ####CNN classifier 
 ```python
+from deel.deel import *
+from deel.network import *
+from deel.commands import *
+
 deel = Deel()
 
 CNN = GoogLeNet()
@@ -47,6 +53,10 @@ ShowLabels()
 
 ####CNN trainer 
 ```python
+from deel.deel import *
+from deel.network import *
+from deel.commands import *
+
 nin = NetworkInNetwork()
 
 InputBatch(train="data/train.txt",
@@ -62,7 +72,7 @@ BatchTrain(workout)
 ####CNN classifier with OpenCV camera (you need OpenCV2) 
 ```python
 import cv2 
-from deel import *
+from deel.deel import *
 from deel.network import *
 from deel.commands import *
 
@@ -114,7 +124,7 @@ StartAgent(trainer)
 
 ####ResNet Inferrence
 ```python
-from deel import *
+from deel.deel import *
 from deel.network import *
 from deel.network.googlenet import *
 from deel.network.resnet152 import *
@@ -131,7 +141,7 @@ ShowLabels()
 
 ####ResNet Finetuning
 ```python
-from deel import *
+from deel.deel import *
 from deel.network import *
 from deel.commands import *
 from deel.network.resnet152 import *
